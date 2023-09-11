@@ -1,0 +1,12 @@
+name: Intro to Github Actions
+
+# When does this workflow run
+on:
+  push:
+
+jobs:
+  hello-world:
+    runs-on: ubunto-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo "Hello world!"
